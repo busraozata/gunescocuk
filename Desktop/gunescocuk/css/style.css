@@ -401,6 +401,61 @@ header .icon-bars:after {
   }
 }
 
+.sub-banner {
+  position: relative;
+  z-index: 99;
+}
+.sub-banner::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.63);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.sub-banner h2 {
+  color: var(--color-white);
+  font-size: 3rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1440px) {
+  .sub-banner h2 {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sub-banner h2 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sub-banner h2 {
+    font-size: 1.8rem;
+  }
+}
+.sub-banner .links {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 1440px) {
+  .sub-banner .links {
+    font-size: 0.9rem;
+  }
+}
+.sub-banner .links a {
+  color: var(--color-white);
+  transition: 0.3s all;
+  padding: 0rem 0.4rem;
+}
+.sub-banner .links a:hover {
+  color: var(--color-orange);
+}
+
 .we-contact {
   margin-top: -5rem;
   position: relative;
@@ -1021,6 +1076,111 @@ header .icon-bars:after {
      object-fit: cover;
 }
 
+.contact {
+  position: relative;
+  padding: 6rem 0rem;
+}
+@media screen and (max-width: 991px) {
+  .contact {
+    padding: 2rem 0rem;
+  }
+}
+.contact span {
+  margin-right: 0.5rem;
+}
+.contact i {
+  color: var(--color-orange);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 1440px) {
+  .contact i {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact i {
+    font-size: 1.6rem;
+  }
+}
+.contact a,
+.contact p {
+  color: var(--color-gray);
+  font-size: 1rem;
+}
+@media screen and (max-width: 1440px) {
+  .contact a,
+.contact p {
+    font-size: 0.9rem;
+  }
+}
+.contact p {
+  max-width: 15rem;
+  text-align: center;
+}
+.contact .form-area form .form-control {
+  border-radius: 10px;
+  resize: none;
+  height: 50px;
+  background-color: transparent;
+  box-shadow: none;
+  color: #1f232b;
+  padding: 9px 20px 11px 20px;
+  font-size: 1rem;
+  line-height: 30px;
+  font-weight: 400;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+@media screen and (max-width: 991px) {
+  .contact .form-area form .form-control {
+    font-size: 0.9rem;
+    height: 40px;
+  }
+}
+.contact .form-area form .form-control:focus {
+  box-shadow: none;
+}
+.contact .form-area form textarea {
+  height: 15.6rem !important;
+}
+@media screen and (max-width: 991px) {
+  .contact .form-area form textarea {
+    height: 13.6rem !important;
+  }
+}
+.contact .form-area form .btn {
+  position: relative;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 18px 35px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 10px;
+  border: none;
+  transition: all 0.4s linear 0s;
+  z-index: 1;
+  margin-top: 2rem;
+}
+.contact .form-area form .btn:hover {
+  background-color: var(--color-dark-black);
+}
+@media screen and (max-width: 1440px) {
+  .contact .form-area form .btn {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact .form-area form .btn {
+    padding: 15px 28px;
+    font-size: 0.8rem;
+  }
+}
+
 footer {
   background-color: var(--color-dark-black);
   padding-top: 4rem;
@@ -1156,4 +1316,20 @@ footer .copyright span {
 .back-to-top:hover, .back-to-top:focus {
   color: var(--color-white);
   box-shadow: none;
+}
+
+.map {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
