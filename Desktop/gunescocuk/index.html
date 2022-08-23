@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Güneş Çocuk</title>
+</head>
+
+<body>
+
+    <div class="top-header d-lg-block d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-start align-items-center">
+                    <ul class="contact-list d-flex">
+                        <li>
+                            <a href=""><i class="fa-solid fa-envelope"></i>info@gunescocuk.com</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-mobile"></i>+90 532 713 58 98</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn">FORMLAR</button>
+                        <ul class="social-media d-flex justify-content-end align-items-center">
+                            <li>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header" class="d-flex justify-content-between align-items-center">
+        <div class="header-inner w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <img class="img-fluid" src="./img/Logo4.png" alt="" />
+                    </a>
+
+                    <!-- <div class="toggle-btn d-lg-none d-block" id="toggle-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div> -->
+                    <div class="wrapper d-lg-none d-block">
+                        <button role="button" class="menu-toggle">
+                            <span class="icon-bars"></span>
+                        </button>
+                    </div>
+
+                    <div class="menu-area">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a class="navbar-brand d-lg-none d-block" href="#">
+                                <img class="img-fluid" src="./img/Logo4.png" alt="" />
+                            </a>
+
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Hakkımızda</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Hizmetlerimiz
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Psikoterapi</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Özel Eğitim Danışmanlığı</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Özel Eğitim Danışmanlığı</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Dil ve Konuşma</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Ergoterapi</a></li>
+                                        <li><a class="dropdown-item" href="#">Beslenme</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">İletişim</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner d-flex justify-content-center align-items-center">
+        <div class="swiper mySwiper ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background: url(./img/bina-1024x630.png) no-repeat; background-size: cover; background-position: top center;">
+                    <div class="banner-text d-flex flex-column justify-content-center align-items-center">
+                        <h6>BİZ KİMİZ?</h6>
+                        <h1>HAKKIMIZDA</h1>
+                        <a href="" class="btn">Devamını Gör</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url(./img/BESLENME.png) no-repeat; background-size: cover; background-position: top center;">
+                    <div class="banner-text d-flex flex-column justify-content-center align-items-center">
+                        <h6>HİZMETİMİZ</h6>
+                        <h1>PSİKOTERAPİ</h1>
+                        <a href="" class="btn">Devamını Gör</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url(./img/ERGOTERAPI-1000x630.png) no-repeat; background-size: cover; background-position: top center;">
+                    <div class="banner-text d-flex flex-column justify-content-center align-items-center">
+                        <h6>HİZMETİMİZ</h6>
+                        <h1>DİL VE KONUŞMA</h1>
+                        <a href="" class="btn">Devamını Gör</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url(./img/HPCS-need-for-mental-health-1200x607-1024x585-1.jpeg) no-repeat; background-size: cover; background-position: top center;">
+                    <div class="banner-text d-flex flex-column justify-content-center align-items-center">
+                        <h6>HİZMETİMİZ</h6>
+                        <h1>ÖZEL EĞİTİM</h1>
+                        <a href="" class="btn">Devamını Gör</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url(./img/ozelegitim-1000x630.jpeg) no-repeat; background-size: cover; background-position: top center;">
+                    <div class="banner-text d-flex flex-column justify-content-center align-items-center">
+                        <h6>HİZMETİMİZ</h6>
+                        <h1>ERGOTERAPİ</h1>
+                        <a href="" class="btn">Devamını Gör</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url(./img/PSIKOTERAPI-2.png) no-repeat; background-size: cover; background-position: top center;">
+                    <div class="banner-text d-flex flex-column justify-content-center align-items-center">
+                        <h6>HİZMETİMİZ</h6>
+                        <h1>BESLENME VE DİYETETİK</h1>
+                        <a href="" class="btn">Devamını Gör</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="we-contact">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-6 justify-content-center align-items-center d-flex ">
+                    <div class="box d-flex flex-column align-items-center justify-content-center w-100">
+                        <div class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <h6>KURUM DANIŞMANIMIZ</h6>
+                        <a href="">
+                            Prof. Dr. Ş. Senem Başgül
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center align-items-center d-flex">
+                    <div class="box d-flex flex-column align-items-center justify-content-center w-100">
+                        <div class="icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h6>UZMAN VE DANIŞMANLARIMIZ</h6>
+                        <a href="">
+                            Daha Fazla Bilgi
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center align-items-center d-flex">
+                    <div class="box d-flex flex-column align-items-center justify-content-center w-100">
+                        <div class="icon">
+                            <i class="fa-brands fa-wpforms"></i>
+                        </div>
+                        <h6>TOPLULUK</h6>
+                        <a href="">
+                            Formlar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doctor-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="title ">
+                        <h6>Güneş Çocuk Kimdir?</h6>
+                        <h2>Güneş Çocuk Tarihçesi</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-9">
+                    <div class="text">
+                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, itaque?</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic vitae nisi ex, dolor beatae
+                            molestias eaque distinctio labore similique modi voluptate dignissimos ut reiciendis
+                            dolorem,
+                            saepe reprehenderit, suscipit nemo placeat. Adipisci, accusamus! Facilis ducimus voluptas
+                            exercitationem aspernatur eligendi? Amet, quod.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="person_bio">
+                        <div class="avatar"> <img class="img-fluid" src="./img/wepik-photo-mode-2022721-16128.png"
+                                alt=""> </div>
+                        <h4>Lorem Ipsum</h4>
+                        <span>
+                            Lorem Ipsum Dolor
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="title mb-3">
+                        <h6>Sizin İçin</h6>
+                        <h2>Hizmetlerimiz</h2>
+                    </div>
+                    <p class="left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit
+                        recusandae porro eaque harum est, ut nobis, laboriosam aspernatur eligendi dolore molestiae
+                        quisquam cumque perferendis, enim eos necessitatibus nulla illo. Excepturi dolor sapiente
+                        officia molestias at dolorum dicta temporibus cupiditate!</p>
+                </div>
+                <div class="col-lg-9">
+                    <div class="swiper mySwiperServices">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/female-psychologist-taking-notes-looking-girl-covering-her-face-with-sad-emotion-card.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title">Psikoterapi</h5>
+                                        </a>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+
+                                    <div class="top position-relative">
+                                        <img class="card-img-top" src="./img/close-up-girl-drawing-paper.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title">Özel Eğitim Danışmanlığı</h5>
+                                        </a>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/young-woman-doing-speech-therapy-with-little-boy.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title">Dil ve Konuşma</h5>
+                                        </a>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="top position-relative">
+                                        <img class="card-img-top" src="./img/smiling-girl-posing (1).jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title">Ergoterapi</h5>
+                                        </a>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/young-woman-doing-speech-therapy-with-little-boy.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="">
+                                            <h5 class="card-title">Beslenme</h5>
+                                        </a>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="title text-center">
+                        <h6>Biz Kimiz</h6>
+                        <h2>Güneş Çocuk</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-2">
+                            <div class="box">
+                                <div class="icon">
+                                    <a href="" class="d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fa-solid fa-feather-pointed"></i>
+                                        <h4>ÖYKÜMÜZ</h4>
+                                    </a>
+                                </div>
+                                <div class="info text-center">
+                                    <a href="">
+                                        <p class="text-center">Kendi çocuklarındaki zorluklarla mücadele ederken tanı,
+                                            takip ve tedavi
+                                            aşamasında yaşadığı zorlukların çözümü ile edinilen tecrübenin diğer
+                                            ailelere yol gösterici olması amaçlanarak,</p>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2">
+                            <div class="box">
+                                <div class="icon ">
+                                    <a href="" class="d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fa-solid fa-crosshairs"></i>
+                                        <h4>AMAÇ VE HEDEFLERİMİZ</h4>
+                                    </a>
+                                </div>
+                                <div class="info text-center">
+                                    <a href="">
+                                        <p>Her çocuk ve ergen biriciktir. Her birinin güçlüğü, kendi özelinde ve ailesi
+                                            içerisinde ele alınmalı ve değerlendirilmelidir. Sorunların neden ve
+                                            çözümüne ..</p>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2">
+                            <div class="box">
+                                <div class="icon">
+                                    <a href="" class="d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <h4>ÇALIŞMA ANLAYIŞIMIZ</h4>
+                                    </a>
+                                </div>
+                                <div class="info text-center">
+                                    <a href="">
+                                        <p>Temel anlayışımız; çözüm aranan sorun için çocuk, ergen ve aileyi
+                                            interdisipliner yaklaşım ile değerlendirmek, en uygun önerileri sunmak,
+                                            gerektiğinde</p>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-2">
+                            <div class="box">
+                                <div class="icon">
+                                    <a href="" class="d-flex flex-column justify-content-center align-items-center">
+                                        <i class="fa-solid fa-face-smile"></i>
+                                        <h4>YAKLAŞIMIMIZ</h4>
+                                    </a>
+                                </div>
+                                <div class="info text-center">
+                                    <a href="">
+                                        <p>Temel yaklaşımımız; çocuğu ve ergeni içinde bulunduğu aile ve okul başta
+                                            olmak üzere tüm sistemlerle birlikte .</p>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  <section id="counter">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="box">
+                        <span class="count percent" data-count="25">
+                            0
+                        </span>
+                        <p>25 Yıla Yakın Tecrübe</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="box">
+                        <span class="count percent" data-count="15">
+                            0
+                        </span>
+                        <p>15’e Yakın Farklı Bilim Dalı ile Interdisipliner Yaklaşım</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="box">
+                        <span class="count percent" data-count="5000">
+                            0
+                        </span>
+                        <p>Binlerce Vaka Tecrübesi ile Her Bireye Özel Çözüm</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section> -->
+
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="title mb-3">
+                        <h6>Blog</h6>
+                        <h2>Yazılarımız</h2>
+                    </div>
+                    <p class="left-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit
+                        recusandae porro eaque harum est, ut nobis, laboriosam aspernatur eligendi dolore molestiae
+                        quisquam cumque perferendis, enim eos necessitatibus nulla illo. Excepturi dolor sapiente
+                        officia molestias at dolorum dicta temporibus cupiditate!</p>
+                </div>
+                <div class="col-lg-9">
+                    <div class="swiper mySwiperServices">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/WhatsApp-Image-2020-05-16-at-11.28.28-495x400.jpeg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time d-flex justify-content-between align-items-center">
+                                                <span>17 Mayıs 2020</span>
+                                                <span class="subject">Pandemi</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+                                                        Danışanlarımız İçi̇n Sınırlı Sayıda Ve Kontrollü Olarak
+                                                        Ziyaret...
+                                                    </h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/WhatsApp-Image-2020-05-02-at-18.48.56-1-495x400.jpeg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time d-flex justify-content-between align-items-center">
+                                                <span>17 Mayıs 2020</span>
+                                                <span class="subject">Pandemi</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+                                                        “Covid İle Mücadele Eden İbb Danişmanlik Destek Hattina
+                                                        Gönüllü
+                                                        Destek”...</h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="top position-relative">
+                                        <img class="card-img-top" src="./img/pablo-neruda-22-495x400.png"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time d-flex justify-content-between align-items-center">
+                                                <span>17 Mayıs 2020</span>
+                                                <span class="subject">Pandemi</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+                                                        Vaka Tartışmaları-5</h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/7718462c-84f1-47b9-a2ed-b08e11d8e0ed-495x400.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time d-flex justify-content-between align-items-center">
+                                                <span>12 Şubat 2020</span>
+                                                <span class="subject">Sosyal Medya</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+
+                                                        Güneş Çocuk Youtobe</h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/9e65c886-8500-4bc2-8e7f-f3dc5143affb-495x400.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time d-flex justify-content-between align-items-center">
+                                                <span>17 Mayıs 2020</span>
+                                                <span class="subject">Terapi</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+
+                                                        Online Terapi
+                                                    </h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/08f79c30-5052-4459-9f1b-73afe3255922-2-495x400.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time d-flex justify-content-between align-items-center">
+                                                <span>17 Mayıs 2020</span>
+                                                <span class="subject">Eğitim</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+                                                        Online Eğitim Danışmanlığı
+                                                    </h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/7718462c-84f1-47b9-a2ed-b08e11d8e0ed-495x400.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time d-flex justify-content-between align-items-center">
+                                                <span>17 Mayıs 2020</span>
+                                                <span class="subject">Pandemi</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+                                                        Danışanlarımız İçi̇n Sınırlı Sayıda Ve Kontrollü Olarak
+                                                        Ziyaret...
+                                                    </h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="top position-relative">
+                                        <img class="card-img-top" src="./img/bina-495x400.png" alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time d-flex justify-content-between align-items-center">
+                                                <span>17 Mayıs 2020</span>
+                                                <span class="subject">Pandemi</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+                                                        Pandemi Günlerinde..
+                                                    </h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+
+                                    <div class="top position-relative">
+                                        <img class="card-img-top"
+                                            src="./img/20994015_1836787006338391_7881578475627028332_n-495x400.jpg"
+                                            alt="Card image cap">
+                                        <a href="" class="continue">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-left">
+                                            <div class="date-time">
+                                                <span>15 Temmuz 2016</span>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="text-left">
+                                                        Doç. Dr Şazi̇ye Senem Başgül Ki̇taplarini İmzaladi.
+                                                    </h5>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+                                                    natus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-3 col-md-12">
+                    <div class="img-wrapper">
+                        <img src="./img/Logo4.png" class="img-fluid" alt="">
+                    </div>
+                    <ul class="social-media d-flex justify-content-start align-items-center">
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 flex-column align-items-center justify-content-center d-flex">
+                    <div>
+                        <h3>HİZMETLERİMİZ</h3>
+                        <ul>
+                            <li><a href="">Psikoterapi</a></li>
+                            <li><a href="">Özel Eğitim Danışmanlığı</a></li>
+                            <li><a href="">Dil ve Konuşma</a></li>
+                            <li><a href="">Ergoterapi</a></li>
+                            <li><a href="">Beslenme</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 align-items-start justify-content-center d-flex">
+                    <div>
+                        <h3>BLOG</h3>
+                        <ul>
+                            <li><a href="" class="d-flex  align-items-start justify-content-center mb-2">
+                                    <img src="./img/20994015_1836787006338391_7881578475627028332_n-495x400.jpg"
+                                        class="img-fluid list-img" alt="">
+                                    <div class="d-flex flex-column justify-content-start align-items-start ">
+                                        <span> Doç. Dr Şazi̇ye Senem... </span>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <p class="datetime">17 Mayıs 2020</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="" class="d-flex  align-items-start justify-content-center">
+                                    <img src="./img/20994015_1836787006338391_7881578475627028332_n-495x400.jpg"
+                                        class="img-fluid list-img" alt="">
+                                    <div class="d-flex flex-column justify-content-start align-items-start ">
+                                        <span> Doç. Dr Şazi̇ye Senem... </span>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <p class="datetime">17 Mayıs 2020</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 align-items-start flex-column justify-content-center d-flex">
+                    <h3>İLETİŞİM</h3>
+                    <ul class="contact-list">
+                        <li><a href=""><i class="fa-solid fa-envelope"></i>info@gunescocuk.com</a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile"></i>+90 532 713 58 98</a></li>
+                    </ul>
+                    <p class="address"><i class="fa-solid fa-location-dot"></i> Kısıklı, Hanımseti Sok. No: 12, 34692
+                        Üsküdar/İstanbul</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <span>
+                    Copyright © 2022 Güneş Çocuk All Rights Reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top btn btn-sm rounded-circle position-fixed bottom-0 end-0 translate-middle d-none"
+        onclick="scrollToTop()" id="back-to-up">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
