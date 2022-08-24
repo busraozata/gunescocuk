@@ -1198,6 +1198,72 @@ header .icon-bars:after {
      object-fit: cover;
 }
 
+.blog-detail {
+  padding: 8rem 0rem;
+  position: relative;
+  z-index: 99;
+}
+@media screen and (max-width: 1200px) {
+  .blog-detail {
+    padding: 4rem 0rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog-detail {
+    padding: 2rem 0rem;
+  }
+}
+.blog-detail .widget-search {
+  background-color: var(--color-orange);
+  height: 15rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 99;
+  text-align: left;
+  padding: 2rem;
+}
+.blog-detail .widget-search h3 {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.blog-detail .widget-search p {
+  font-size: 1rem;
+  color: var(--color-white);
+}
+@media screen and (max-width: 1440px) {
+  .blog-detail .widget-search p {
+    font-size: 0.9rem;
+  }
+}
+.blog-detail .widget-search:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 150px;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  z-index: -1;
+}
+.blog-detail .widget-search form {
+  position: relative;
+}
+.blog-detail .widget-search form .form-control:focus {
+  box-shadow: none;
+}
+.blog-detail .widget-search form .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+}
+.blog-detail img {
+  border-radius: 10px;
+}
+
 .contact {
   position: relative;
   padding: 6rem 0rem;
