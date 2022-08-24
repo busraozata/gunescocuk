@@ -837,12 +837,12 @@ header .icon-bars:after {
   font-weight: 700;
 }
 .services .swiper-slide .card .card-body p {
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
   color: var(--color-gray);
 }
 @media screen and (max-width: 1440px) {
   .services .swiper-slide .card .card-body p {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
   }
 }
 .services .swiper-slide .continue {
@@ -985,6 +985,8 @@ header .icon-bars:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  border: 0;
 }
 .blog .swiper-slide:hover .continue {
   visibility: visible;
@@ -1003,12 +1005,12 @@ header .icon-bars:after {
   font-weight: 700;
 }
 .blog .swiper-slide .card .card-body p {
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
   color: var(--color-gray);
 }
 @media screen and (max-width: 1440px) {
   .blog .swiper-slide .card .card-body p {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
   }
 }
 .blog .swiper-slide .continue {
@@ -1031,19 +1033,15 @@ header .icon-bars:after {
   color: var(--color-orange);
   font-size: 3rem;
 }
-.blog .swiper-slide .card {
-  height: 100%;
-  border: 0;
-}
-.blog .swiper-slide .card .card-body {
+.blog .swiper-slide .card-body {
   padding: 1rem 1.5rem;
   text-align: left;
 }
-.blog .swiper-slide .card .card-body span {
+.blog .swiper-slide .card-body span {
   color: var(--color-gray);
   margin-bottom: 0.4rem;
 }
-.blog .swiper-slide .card .card-body h5 {
+.blog .swiper-slide .card-body h5 {
   color: var(--color-black);
   font-size: 1.2rem;
   text-transform: capitalize;
@@ -1051,20 +1049,20 @@ header .icon-bars:after {
   transition: 0.3s all;
 }
 @media screen and (max-width: 1200px) {
-  .blog .swiper-slide .card .card-body h5 {
+  .blog .swiper-slide .card-body h5 {
     font-size: 1rem;
   }
 }
-.blog .swiper-slide .card .card-body .subject {
+.blog .swiper-slide .card-body .subject {
   color: var(--color-orange);
   font-weight: 600;
   font-size: 1rem;
 }
-.blog .swiper-slide .card .card-body .date-time {
+.blog .swiper-slide .card-body .date-time {
   font-size: 1rem;
 }
 @media screen and (max-width: 1440px) {
-  .blog .swiper-slide .card .card-body .date-time {
+  .blog .swiper-slide .card-body .date-time {
     font-size: 0.9rem;
   }
 }
@@ -1072,6 +1070,130 @@ header .icon-bars:after {
   display: block;
   width: 100%;
   height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-page {
+  padding: 8rem 0rem;
+  position: relative;
+  z-index: 99;
+}
+@media screen and (max-width: 1200px) {
+  .blog-page {
+    padding: 4rem 0rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog-page {
+    padding: 2rem 0rem;
+  }
+}
+.blog-page .card {
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 0;
+}
+.blog-page .card:hover .continue {
+  visibility: visible;
+  opacity: 9;
+}
+.blog-page .card .card {
+  height: 100%;
+  border: 0;
+}
+.blog-page .card .card .card-body {
+  padding: 1.8rem;
+}
+.blog-page .card .card .card-body h5 {
+  color: var(--color-black);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.blog-page .card .card .card-body p {
+  font-size: 0.9rem !important;
+  color: var(--color-gray);
+}
+@media screen and (max-width: 1440px) {
+  .blog-page .card .card .card-body p {
+    font-size: 0.8rem !important;
+  }
+}
+.blog-page .card .continue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  visibility: 0;
+  background-color: rgba(0, 0, 0, 0.519);
+  transition: 0.3s all;
+}
+.blog-page .card .continue i {
+  color: var(--color-orange);
+  font-size: 3rem;
+}
+.blog-page .card .card-body {
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+.blog-page .card .card-body span {
+  color: var(--color-gray);
+  margin-bottom: 0.4rem;
+}
+.blog-page .card .card-body h5 {
+  color: var(--color-black);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  transition: 0.3s all;
+}
+@media screen and (max-width: 1200px) {
+  .blog-page .card .card-body h5 {
+    font-size: 1rem;
+  }
+}
+.blog-page .card .card-body .subject {
+  color: var(--color-orange);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.blog-page .card .card-body .date-time {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1440px) {
+  .blog-page .card .card-body .date-time {
+    font-size: 0.9rem;
+  }
+}
+.blog-page .card .card-body {
+  background-color: #F2F2F2;
+  padding: 2rem;
+}
+.blog-page .card p {
+  font-size: 1rem !important;
+  color: var(--color-gray);
+}
+@media screen and (max-width: 1440px) {
+  .blog-page .card p {
+    font-size: 0.9rem !important;
+  }
+}
+.blog-page .card img {
+  height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1090,12 +1212,12 @@ header .icon-bars:after {
 }
 .contact i {
   color: var(--color-orange);
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 1440px) {
   .contact i {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 991px) {

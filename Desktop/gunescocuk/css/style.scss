@@ -89,10 +89,10 @@ $xxl-breakpoint: 1400px; //Extra extra large
             }
 
             p {
-                font-size: 0.9rem;
+                font-size: 0.9rem !important;
 
                 @media screen and(max-width:1440px) {
-                    font-size: 0.8rem;
+                    font-size: 0.8rem !important;
                 }
 
                 color: var(--color-gray);
@@ -123,6 +123,48 @@ $xxl-breakpoint: 1400px; //Extra extra large
     }
 }
 
+@mixin blogCard() {
+    height: 100%;
+    border: 0;
+
+    .card-body {
+        padding: 1rem 1.5rem;
+        text-align: left;
+
+        span {
+
+            color: var(--color-gray);
+            margin-bottom: 0.4rem;
+        }
+
+        h5 {
+            color: var(--color-black);
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            font-weight: 700;
+            transition: 0.3s all;
+
+            @media screen and(max-width:$xl-breakpoint) {
+                font-size: 1rem;
+            }
+        }
+
+        .subject {
+            color: var(--color-orange);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .date-time {
+            font-size: 1rem;
+
+            @media screen and(max-width:1440px) {
+                font-size: 0.9rem;
+            }
+        }
+
+    }
+}
 
 
 ul {
@@ -1038,48 +1080,7 @@ header {
     .swiper-slide {
         @include card();
 
-        .card {
-            height: 100%;
-            border: 0;
-
-            .card-body {
-                padding: 1rem 1.5rem;
-                text-align: left;
-
-                span {
-
-                    color: var(--color-gray);
-                    margin-bottom: 0.4rem;
-                }
-
-                h5 {
-                    color: var(--color-black);
-                    font-size: 1.2rem;
-                    text-transform: capitalize;
-                    font-weight: 700;
-                    transition: 0.3s all;
-
-                    @media screen and(max-width:$xl-breakpoint) {
-                        font-size: 1rem;
-                    }
-                }
-
-                .subject {
-                    color: var(--color-orange);
-                    font-weight: 600;
-                    font-size: 1rem;
-                }
-
-                .date-time {
-                    font-size: 1rem;
-
-                    @media screen and(max-width:1440px) {
-                        font-size: 0.9rem;
-                    }
-                }
-
-            }
-        }
+        @include blogCard()
     }
 
 
@@ -1092,9 +1093,49 @@ header {
     }
 }
 
+.blog-page {
+    padding: 8rem 0rem;
+    position: relative;
+    z-index: 99;
+
+    @media screen and(max-width:$xl-breakpoint) {
+        padding: 4rem 0rem;
+    }
+
+    @media screen and(max-width:$sm-breakpoint) {
+        padding: 2rem 0rem;
+    }
+    .card {
+        @include card();
+
+        @include blogCard();
+
+        .card-body{
+            background-color: #F2F2F2;
+            padding: 2rem;
+        }
+
+        p {
+            font-size: 1rem !important;
+
+            @media screen and(max-width:1440px) {
+                font-size: 0.9rem !important;
+            }
+
+            color: var(--color-gray);
+        }
+        img {
+            height: 25rem;
+            object-fit: cover;
+
+        }
+    }
+}
+
 .contact {
     position: relative;
     padding: 6rem 0rem;
+
     @media screen and(max-width:$lg-breakpoint) {
         padding: 2rem 0rem;
     }
@@ -1105,12 +1146,13 @@ header {
 
     i {
         color: var(--color-orange);
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
 
         @media screen and(max-width:1440px) {
-            font-size: 2.3rem;
+            font-size: 2.5rem;
         }
+
         @media screen and(max-width:$lg-breakpoint) {
             font-size: 1.6rem;
         }
@@ -1150,6 +1192,7 @@ header {
                     font-size: 0.9rem;
                     height: 40px;
                 }
+
                 &:focus {
                     box-shadow: none;
                 }
@@ -1157,8 +1200,9 @@ header {
 
             textarea {
                 height: 15.6rem !important;
+
                 @media screen and(max-width:$lg-breakpoint) {
-                    height:13.6rem !important;
+                    height: 13.6rem !important;
                 }
             }
 
@@ -1180,12 +1224,14 @@ header {
                 z-index: 1;
                 margin-top: 2rem;
 
-                &:hover{
+                &:hover {
                     background-color: var(--color-dark-black);
                 }
+
                 @media screen and(max-width:1440px) {
                     font-size: 0.9rem;
                 }
+
                 @media screen and(max-width:$lg-breakpoint) {
                     padding: 15px 28px;
                     font-size: 0.8rem;
