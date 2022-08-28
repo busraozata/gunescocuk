@@ -19,7 +19,6 @@ const stickyHeader = () => {
 };
 
 
-
 const menuToggle = document.querySelector('.menu-toggle');
 const wrapper = document.querySelector('.wrapper');
 const navigation = document.querySelector('.menu-area');
@@ -30,13 +29,6 @@ menuToggle.onclick = function () {
     navigation.classList.toggle('active');
     wrapper.classList.toggle("menu--is-revealed")
 }
-
-
-/* window.addEventListener("scroll", function () {
-    let header = document.querySelector('.header-inner');
-    header.classList.toggle('sticky', window.scrollY > 100);
-
-}) */
 
 
 var swiper = new Swiper(".mySwiper", {
@@ -116,41 +108,6 @@ var swiper = new Swiper(".mySwiperBlog", {
         },
     },
 });
-
-
-
-/* var counted = 0;
-$(window).scroll(function () {
-
-    var oTop = $('#counter').offset().top - window.innerHeight;
-    if (counted == 0 && $(window).scrollTop() > oTop) {
-        $('.count').each(function () {
-            var $this = $(this),
-                countTo = $this.attr('data-count');
-            $({
-                countNum: $this.text()
-            }).animate({
-                countNum: countTo
-            },
-
-                {
-
-                    duration: 2000,
-                    easing: 'swing',
-                    step: function () {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $this.text(this.countNum);
-                        //alert('finished');
-                    }
-
-                });
-        });
-        counted = 1;
-    }
-
-}); */
 
 
 window.onscroll = () => {

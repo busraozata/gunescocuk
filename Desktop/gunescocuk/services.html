@@ -56,13 +56,10 @@
         <div class="header-inner w-100">
             <div class="container">
                 <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img class="img-fluid" src="./img/Logo4.png" alt="" />
                     </a>
 
-                    <!-- <div class="toggle-btn d-lg-none d-block" id="toggle-btn">
-                        <i class="fa-solid fa-bars"></i>
-                    </div> -->
                     <div class="wrapper d-lg-none d-block">
                         <button role="button" class="menu-toggle">
                             <span class="icon-bars"></span>
@@ -71,36 +68,40 @@
 
                     <div class="menu-area">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <a class="navbar-brand d-lg-none d-block" href="#">
+                            <a class="navbar-brand d-lg-none d-block" href="index.html">
                                 <img class="img-fluid" src="./img/Logo4.png" alt="" />
                             </a>
 
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                                    <a class="nav-link " aria-current="page" href="index.html">Ana Sayfa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Hakkımızda</a>
+                                    <a class="nav-link" aria-current="page" href="about.html">Hakkımızda</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Hizmetlerimiz
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Psikoterapi</a></li>
+                                    <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside active">Hizmetlerimiz</a>
+                                    <ul class="dropdown-menu first-dropdown-menu shadow">
+                                        <li><a class="dropdown-item" href="./services-detail.html">Psikoterapi</a></li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Özel Eğitim Danışmanlığı</a>
+                                            <a class="dropdown-item" href="./services-detail.html">Özel Eğitim Danışmanlığı</a>
                                         </li>
+         
                                         <li>
-                                            <a class="dropdown-item" href="#">Özel Eğitim Danışmanlığı</a>
+                                            <a class="dropdown-item" href="./services-detail.html">Dil ve Konuşma</a>
                                         </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">Dil ve Konuşma</a>
+                                        <li><a class="dropdown-item" href="./services-detail.html">Ergoterapi</a></li>
+                                        <li><a class="dropdown-item" href="./services-detail.html">Beslenme</a></li>
+                                        <li class="dropstart">
+                                            <a href="services.html" class="dropdown-item dropdown-toggle"
+                                                data-bs-toggle="dropdown">Özel Eğitim Hizmet Alanları</a>
+                                            <ul class="dropdown-menu second-dropdown-menu shadow">
+                                                <li><a class="dropdown-item" href="services-detail.html"> Down Sendromu (DS)</a></li>
+                                                <li><a class="dropdown-item" href="services-detail.html"> Özgül Öğrenme Güçlüğü</a></li>
+                                            </ul>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Ergoterapi</a></li>
-                                        <li><a class="dropdown-item" href="#">Beslenme</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -340,7 +341,7 @@
             </div>
         </div>
     </footer>
-    
+
     <button class="back-to-top btn btn-sm rounded-circle position-fixed bottom-0 end-0 translate-middle d-none"
         onclick="scrollToTop()" id="back-to-up">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
