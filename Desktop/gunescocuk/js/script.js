@@ -54,7 +54,6 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiperServices", {
 
     spaceBetween: 30,
-    freeMode: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -117,6 +116,7 @@ var swiper = new Swiper(".mySwiperBlog", {
         },
     },
 });
+
 
 
 /* var counted = 0;
