@@ -181,20 +181,36 @@ $xxl-breakpoint: 1400px; //Extra extra large
 
     .last-blogs {
         .box {
+
+            &:hover{
+                i{
+                    color: var(--color-orange);
+                    margin-left: 0.5rem;
+                }
+            }
             img {
                 height: 4.5rem;
                 width: 4.5rem;
                 object-fit: cover;
                 margin-right: 1rem;
             }
+            i{
+                transition: 0.3s all;
+            }
 
             h5 {
                 color: var(--color-black);
                 font-size: 1rem;
                 margin-top: 0.4rem;
+                transition: 0.3s all;
 
                 @media screen and(max-width:$xl-breakpoint) {
                     font-size: 0.9rem;
+                }
+
+                &:hover{
+
+                    color: var(--color-orange);
                 }
             }
 
@@ -1057,6 +1073,7 @@ header {
         @media screen and(max-width:1440px) {
             font-size: 0.9rem;
         }
+
         @media screen and(max-width:$sm-breakpoint) {
             font-size: 0.7rem;
         }
@@ -1147,7 +1164,8 @@ header {
     }
 
     @include h6();
-    h6{
+
+    h6 {
         color: var(--color-black)
     }
 
@@ -1238,6 +1256,26 @@ header {
 
     .widget-posts {
         @include widget-post();
+        
+
+        .last-blogs {
+            h5{
+                font-weight: 400 !important;
+            }
+            .datetime {
+                padding: 0.5rem 1rem;
+                background-color: var(--color-orange);
+                border-radius: 10px;
+                margin-right: 1rem;
+
+                span {
+                    color: var(--color-white);
+                }
+            }
+            i{
+                color: var(--color-black);
+            }
+        }
 
         h3 {
             margin: 0;
@@ -1259,8 +1297,9 @@ header {
     }
 
     @include h6();
-    h6{
-        color: var(--color-black) !important; 
+
+    h6 {
+        color: var(--color-black) !important;
     }
 
     h2 {
@@ -1322,7 +1361,7 @@ header {
     background-image: url(../img/ozelegitim-1000x630.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-  /*   background-position: 50% -24px;
+    /*   background-position: 50% -24px;
     background-attachment: fixed; */
     padding: 8rem 0rem;
     position: relative;
@@ -1374,7 +1413,8 @@ header {
 
     .swiper-slide {
         @include card();
-        h5{
+
+        h5 {
             @media screen and(max-width:$xl-breakpoint) {
                 font-size: 1.1rem !important;
             }
@@ -1430,7 +1470,7 @@ header {
     background-image: url(../img/people-business-meeting-conference-hall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   /*  background-position: 50% -24px;
+    /*  background-position: 50% -24px;
     background-attachment: fixed; */
     padding: 8rem 0rem;
     position: relative;
@@ -1511,6 +1551,7 @@ header {
         a {
             color: var(--color-gray);
             font-size: 1rem;
+
             @media screen and(max-width:$sm-breakpoint) {
                 font-size: 0.8rem;
             }

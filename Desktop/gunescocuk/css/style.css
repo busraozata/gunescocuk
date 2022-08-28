@@ -751,6 +751,10 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
     font-size: 1.1rem;
   }
 }
+.doctor-about .widget-posts .last-blogs .box:hover i {
+  color: var(--color-orange);
+  margin-left: 0.5rem;
+}
 .doctor-about .widget-posts .last-blogs .box img {
   height: 4.5rem;
   width: 4.5rem;
@@ -758,15 +762,22 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
      object-fit: cover;
   margin-right: 1rem;
 }
+.doctor-about .widget-posts .last-blogs .box i {
+  transition: 0.3s all;
+}
 .doctor-about .widget-posts .last-blogs .box h5 {
   color: var(--color-black);
   font-size: 1rem;
   margin-top: 0.4rem;
+  transition: 0.3s all;
 }
 @media screen and (max-width: 1200px) {
   .doctor-about .widget-posts .last-blogs .box h5 {
     font-size: 0.9rem;
   }
+}
+.doctor-about .widget-posts .last-blogs .box h5:hover {
+  color: var(--color-orange);
 }
 .doctor-about .widget-posts .last-blogs .box span {
   font-weight: 500;
@@ -777,6 +788,21 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
   .doctor-about .widget-posts .last-blogs .box span {
     font-size: 0.8rem;
   }
+}
+.doctor-about .widget-posts .last-blogs h5 {
+  font-weight: 400 !important;
+}
+.doctor-about .widget-posts .last-blogs .datetime {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-orange);
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+.doctor-about .widget-posts .last-blogs .datetime span {
+  color: var(--color-white);
+}
+.doctor-about .widget-posts .last-blogs i {
+  color: var(--color-black);
 }
 .doctor-about .widget-posts h3 {
   margin: 0;
@@ -876,7 +902,7 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
   background-repeat: no-repeat;
   background-size: cover;
   /*   background-position: 50% -24px;
-    background-attachment: fixed; */
+  background-attachment: fixed; */
   padding: 8rem 0rem;
   position: relative;
   z-index: 99;
@@ -1049,7 +1075,7 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
   background-repeat: no-repeat;
   background-size: cover;
   /*  background-position: 50% -24px;
-   background-attachment: fixed; */
+  background-attachment: fixed; */
   padding: 8rem 0rem;
   position: relative;
   z-index: 99;
@@ -1297,6 +1323,10 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
     font-size: 1.1rem;
   }
 }
+.blog-list .widget-posts .last-blogs .box:hover i {
+  color: var(--color-orange);
+  margin-left: 0.5rem;
+}
 .blog-list .widget-posts .last-blogs .box img {
   height: 4.5rem;
   width: 4.5rem;
@@ -1304,15 +1334,22 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
      object-fit: cover;
   margin-right: 1rem;
 }
+.blog-list .widget-posts .last-blogs .box i {
+  transition: 0.3s all;
+}
 .blog-list .widget-posts .last-blogs .box h5 {
   color: var(--color-black);
   font-size: 1rem;
   margin-top: 0.4rem;
+  transition: 0.3s all;
 }
 @media screen and (max-width: 1200px) {
   .blog-list .widget-posts .last-blogs .box h5 {
     font-size: 0.9rem;
   }
+}
+.blog-list .widget-posts .last-blogs .box h5:hover {
+  color: var(--color-orange);
 }
 .blog-list .widget-posts .last-blogs .box span {
   font-weight: 500;
@@ -1684,6 +1721,10 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
     font-size: 1.1rem;
   }
 }
+.blog-detail .widget-posts .last-blogs .box:hover i {
+  color: var(--color-orange);
+  margin-left: 0.5rem;
+}
 .blog-detail .widget-posts .last-blogs .box img {
   height: 4.5rem;
   width: 4.5rem;
@@ -1691,15 +1732,22 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
      object-fit: cover;
   margin-right: 1rem;
 }
+.blog-detail .widget-posts .last-blogs .box i {
+  transition: 0.3s all;
+}
 .blog-detail .widget-posts .last-blogs .box h5 {
   color: var(--color-black);
   font-size: 1rem;
   margin-top: 0.4rem;
+  transition: 0.3s all;
 }
 @media screen and (max-width: 1200px) {
   .blog-detail .widget-posts .last-blogs .box h5 {
     font-size: 0.9rem;
   }
+}
+.blog-detail .widget-posts .last-blogs .box h5:hover {
+  color: var(--color-orange);
 }
 .blog-detail .widget-posts .last-blogs .box span {
   font-weight: 500;
