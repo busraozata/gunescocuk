@@ -319,6 +319,10 @@ header .header-inner .navbar.navbar-expand-lg .collapse.active {
   visibility: visible !important;
   width: 100% !important;
 }
+header .header-inner .mobil-map {
+  color: var(--color-black);
+  margin-left: 0.3rem;
+}
 
 .banner {
   min-height: 85vh;
