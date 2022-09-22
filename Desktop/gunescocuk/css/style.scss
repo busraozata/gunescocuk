@@ -1661,9 +1661,9 @@ header {
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #fff;
             border: none;
             outline: none;
+           
 
             &:focus-visible {
                 outline: none !important;
@@ -1685,7 +1685,8 @@ header {
 
             a {
                 outline: none;
-
+                border-radius: 2rem;
+            overflow: hidden;
                 &:focus-visible {
                     outline: none;
                 }
@@ -1702,8 +1703,7 @@ header {
             .img-wrapper{
                 position: relative;
                 z-index: 99;
-                border-radius: 2rem;
-                overflow: hidden;
+              
                 &::before{
                     content: "";
                     position: absolute;

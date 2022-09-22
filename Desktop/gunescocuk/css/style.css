@@ -1658,7 +1658,6 @@ header .header-inner .mobil-map {
 .gallery .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   border: none;
   outline: none;
   /* Center slide text vertically */
@@ -1671,6 +1670,8 @@ header .header-inner .mobil-map {
 }
 .gallery .swiper .swiper-slide a {
   outline: none;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 .gallery .swiper .swiper-slide a:focus-visible {
   outline: none;
@@ -1682,8 +1683,6 @@ header .header-inner .mobil-map {
 .gallery .swiper .swiper-slide .img-wrapper {
   position: relative;
   z-index: 99;
-  border-radius: 2rem;
-  overflow: hidden;
 }
 .gallery .swiper .swiper-slide .img-wrapper::before {
   content: "";
