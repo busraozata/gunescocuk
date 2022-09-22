@@ -1702,6 +1702,8 @@ header {
             .img-wrapper{
                 position: relative;
                 z-index: 99;
+                border-radius: 2rem;
+                overflow: hidden;
                 &::before{
                     content: "";
                     position: absolute;

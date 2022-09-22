@@ -1682,6 +1682,8 @@ header .header-inner .mobil-map {
 .gallery .swiper .swiper-slide .img-wrapper {
   position: relative;
   z-index: 99;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 .gallery .swiper .swiper-slide .img-wrapper::before {
   content: "";
