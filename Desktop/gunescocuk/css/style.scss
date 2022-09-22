@@ -182,19 +182,21 @@ $xxl-breakpoint: 1400px; //Extra extra large
     .last-blogs {
         .box {
 
-            &:hover{
-                i{
+            &:hover {
+                i {
                     color: var(--color-orange);
                     margin-left: 0.5rem;
                 }
             }
+
             img {
                 height: 4.5rem;
                 width: 4.5rem;
                 object-fit: cover;
                 margin-right: 1rem;
             }
-            i{
+
+            i {
                 transition: 0.3s all;
             }
 
@@ -208,7 +210,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
                     font-size: 0.9rem;
                 }
 
-                &:hover{
+                &:hover {
 
                     color: var(--color-orange);
                 }
@@ -513,6 +515,28 @@ $xxl-breakpoint: 1400px; //Extra extra large
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+@mixin list-type {
+    li {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0.5rem;
+        color: var(--color-gray) !important;
+        font-size: 0.9rem;
+        font-weight: 300;
+        
+        &:before {
+            font-family: FontAwesome;
+            content: "\f054";
+            position: absolute;
+            left: -0.5rem;
+            font-size: 0.8rem;
+            color: var(--color-orange);
         }
     }
 }
@@ -899,7 +923,7 @@ header {
 
         }
 
-        .mobil-map{
+        .mobil-map {
             color: var(--color-black);
             margin-left: 0.3rem;
         }
@@ -910,6 +934,7 @@ header {
     min-height: 85vh;
     width: 100%;
     position: relative;
+    background-color: var(--color-gray);
 
     @media screen and(max-width:$sm-breakpoint) {
         min-height: 50vh;
@@ -1038,6 +1063,7 @@ header {
 .sub-banner {
     position: relative;
     z-index: 99;
+    background-color: var(--color-gray);
 
     &::before {
         content: "";
@@ -1261,12 +1287,13 @@ header {
 
     .widget-posts {
         @include widget-post();
-        
+
 
         .last-blogs {
-            h5{
+            h5 {
                 font-weight: 400 !important;
             }
+
             .datetime {
                 padding: 0.5rem 1rem;
                 background-color: var(--color-orange);
@@ -1277,7 +1304,8 @@ header {
                     color: var(--color-white);
                 }
             }
-            i{
+
+            i {
                 color: var(--color-black);
             }
         }
@@ -1380,6 +1408,7 @@ header {
     @media screen and(max-width:$sm-breakpoint) {
         padding: 2rem 0rem;
     }
+   
 
     &:before {
         content: "";
@@ -1805,6 +1834,10 @@ header {
         }
     }
 
+    ul{
+        padding-left: 0.7rem;
+        @include list-type;
+    }
     .img-wrapper {
         img {
             border-radius: 18px;

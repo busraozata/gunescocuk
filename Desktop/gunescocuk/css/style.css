@@ -328,6 +328,7 @@ header .header-inner .mobil-map {
   min-height: 85vh;
   width: 100%;
   position: relative;
+  background-color: var(--color-gray);
 }
 @media screen and (max-width: 600px) {
   .banner {
@@ -445,6 +446,7 @@ header .header-inner .mobil-map {
 .sub-banner {
   position: relative;
   z-index: 99;
+  background-color: var(--color-gray);
 }
 .sub-banner::before {
   content: "";
@@ -2048,6 +2050,27 @@ header .header-inner .mobil-map {
   .service-detail h2 {
     margin-top: 1.5rem;
   }
+}
+.service-detail ul {
+  padding-left: 0.7rem;
+}
+.service-detail ul li {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.5rem;
+  color: var(--color-gray) !important;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.service-detail ul li:before {
+  font-family: FontAwesome;
+  content: "\f054";
+  position: absolute;
+  left: -0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-orange);
 }
 .service-detail .img-wrapper img {
   border-radius: 18px;
