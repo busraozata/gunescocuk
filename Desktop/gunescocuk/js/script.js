@@ -109,6 +109,44 @@ var swiper = new Swiper(".mySwiperBlog", {
     },
 });
 
+//Galery
+var swiperGalery = new Swiper(".mySwiperGalery", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+  
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+});
+
+// Fancybox Config
+$('[data-fancybox="gallery"]').fancybox({
+    buttons: [
+        "slideShow",
+        "thumbs",
+        "zoom",
+        "fullScreen",
+        "share",
+        "close"
+    ],
+    loop: false,
+    protect: true
+});
 
 window.onscroll = () => {
     toggleTopButton();

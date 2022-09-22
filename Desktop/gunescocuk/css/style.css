@@ -1643,6 +1643,68 @@ header .header-inner .mobil-map {
      object-fit: cover;
 }
 
+.fancybox-container {
+  z-index: 99999999999999990000000000000000;
+}
+
+.gallery {
+  min-width: 100%;
+  padding: 2rem 0 2rem 0;
+}
+.gallery .swiper {
+  width: 100%;
+  height: 100%;
+}
+.gallery .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  outline: none;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .swiper .swiper-slide:focus-visible {
+  outline: none !important;
+}
+.gallery .swiper .swiper-slide a {
+  outline: none;
+}
+.gallery .swiper .swiper-slide a:focus-visible {
+  outline: none;
+}
+.gallery .swiper .swiper-slide:hover .img-wrapper::before {
+  visibility: visible;
+  opacity: 9;
+}
+.gallery .swiper .swiper-slide .img-wrapper {
+  position: relative;
+  z-index: 99;
+}
+.gallery .swiper .swiper-slide .img-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.703);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all;
+}
+.gallery .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 17rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .blog-detail {
   padding: 4rem 0rem;
   position: relative;

@@ -529,7 +529,7 @@ $xxl-breakpoint: 1400px; //Extra extra large
         color: var(--color-gray) !important;
         font-size: 0.9rem;
         font-weight: 300;
-        
+
         &:before {
             font-family: FontAwesome;
             content: "\f054";
@@ -1408,7 +1408,7 @@ header {
     @media screen and(max-width:$sm-breakpoint) {
         padding: 2rem 0rem;
     }
-   
+
 
     &:before {
         content: "";
@@ -1645,6 +1645,90 @@ header {
     }
 }
 
+//GALERY
+.fancybox-container {
+    z-index: 99999999999999999999999999999999;
+}
+
+.gallery {
+    min-width: 100%;
+    padding: 2rem 0 2rem 0;
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            border: none;
+            outline: none;
+
+            &:focus-visible {
+                outline: none !important;
+            }
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            a {
+                outline: none;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+            &:hover{
+                .img-wrapper{
+                    &::before{
+                        visibility: visible;
+                        opacity: 9;
+                    }
+                }
+            }
+
+            .img-wrapper{
+                position: relative;
+                z-index: 99;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.703);
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.3s all;
+                }
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                height: 17rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+}
 
 .blog-detail {
     padding: 4rem 0rem;
@@ -1834,10 +1918,11 @@ header {
         }
     }
 
-    ul{
+    ul {
         padding-left: 0.7rem;
         @include list-type;
     }
+
     .img-wrapper {
         img {
             border-radius: 18px;
