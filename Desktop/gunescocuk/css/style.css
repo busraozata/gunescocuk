@@ -220,10 +220,12 @@ header .header-inner .navbar .navbar-brand img {
     box-shadow: none !important;
   }
 }
-@media screen and (max-width: 991px) {
-  header .header-inner .navbar.navbar-expand-lg .collapse ul.navbar-nav {
-    margin-top: 3rem;
-  }
+header .header-inner .navbar.navbar-expand-lg .collapse ul {
+  /*  &.navbar-nav {
+      @media screen and(max-width:$lg-breakpoint) {
+          margin-top: 3rem;
+      }
+  } */
 }
 header .header-inner .navbar.navbar-expand-lg .collapse ul li {
   margin: 0 0.3rem;
@@ -286,14 +288,18 @@ header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu {
   header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu {
     padding-left: 0rem;
     background-color: transparent;
+    box-shadow: none !important;
+    margin-left: 0rem;
+  }
+  header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu.submenu {
+    overflow-y: scroll;
+    height: 10rem;
   }
 }
 header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu .dropdown-item {
+  background-color: var(--color-white) !important;
   font-size: 1rem;
   white-space: unset;
-}
-header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu .dropdown-item:hover {
-  background-color: transparent;
 }
 @media screen and (max-width: 991px) {
   header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu .dropdown-item {
@@ -307,7 +313,7 @@ header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu .dropd
     height: 100vh;
     width: 0;
     background: var(--color-white);
-    top: 0;
+    top: 5rem;
     left: 0;
     right: 0;
     z-index: 99999;
@@ -2120,10 +2126,12 @@ header .header-inner .mobil-map {
     margin-top: 1.5rem;
   }
 }
-.service-detail ol, .service-detail ul {
+.service-detail ol,
+.service-detail ul {
   padding-left: 0.7rem;
 }
-.service-detail ol li, .service-detail ul li {
+.service-detail ol li,
+.service-detail ul li {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -2133,7 +2141,8 @@ header .header-inner .mobil-map {
   font-size: 0.9rem;
   font-weight: 300;
 }
-.service-detail ol li:before, .service-detail ul li:before {
+.service-detail ol li:before,
+.service-detail ul li:before {
   font-family: FontAwesome;
   content: "\f054";
   position: absolute;
