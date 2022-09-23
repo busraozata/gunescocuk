@@ -1809,7 +1809,7 @@ header {
         }
 
         .content {
-
+            height: 17rem;
             .content-top {
                 background-color: #1f232b;
                 padding: 0.7rem 2rem;
@@ -1875,7 +1875,7 @@ header {
                         color: var(--color-black);
                         font-weight: 600;
                         transition: 0.3s all;
-                        font-size: 1.5rem;
+                        font-size: 1.25rem;
 
                         @media screen and(max-width:$xl-breakpoint) {
                             font-size: 1.2rem;

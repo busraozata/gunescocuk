@@ -2010,6 +2010,9 @@ header .header-inner .mobil-map {
     padding-left: 0rem;
   }
 }
+.services-list .item .content {
+  height: 17rem;
+}
 .services-list .item .content .content-top {
   background-color: #1f232b;
   padding: 0.7rem 2rem;
@@ -2068,7 +2071,7 @@ header .header-inner .mobil-map {
   color: var(--color-black);
   font-weight: 600;
   transition: 0.3s all;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 @media screen and (max-width: 1200px) {
   .services-list .item .content .content-bottom h3 a {
