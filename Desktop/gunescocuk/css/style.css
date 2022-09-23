@@ -279,6 +279,7 @@ header .header-inner .navbar.navbar-expand-lg .collapse ul li.nav-item:hover > .
 }
 header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu {
   transition: 0.3s all;
+  max-width: 22rem;
   border-radius: 0px !important;
   border: none;
   box-shadow: 4px 10px 8px 0px rgba(0, 0, 0, 0.2);
@@ -291,6 +292,7 @@ header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu {
 }
 header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu .dropdown-item {
   font-size: 1rem;
+  white-space: unset;
 }
 header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
@@ -1630,6 +1632,7 @@ header .header-inner .mobil-map {
   }
 }
 .blog-page .card .card-body {
+  width: 100%;
   background-color: #F2F2F2;
   padding: 2rem;
 }

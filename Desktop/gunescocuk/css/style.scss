@@ -880,6 +880,7 @@ header {
 
                         .dropdown-menu {
                             transition: 0.3s all;
+                            max-width: 22rem;
                             border-radius: 0px !important;
                             border: none;
                             box-shadow: 4px 10px 8px 0px rgba(0,0,0,0.2);
@@ -899,6 +900,7 @@ header {
                                 }
 
                                 font-size: 1rem;
+                                white-space: unset;
                             }
                         }
                     }
@@ -1632,6 +1634,7 @@ header {
         @include blogCard();
 
         .card-body {
+            width: 100%;
             background-color: #F2F2F2;
             padding: 2rem;
         }
