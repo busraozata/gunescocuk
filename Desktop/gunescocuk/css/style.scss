@@ -606,19 +606,15 @@ a {
 }
 
 header {
-    z-index: 99999;
-
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: 0.5s;
+    background-color: var(--color-white);
     .header-inner {
-        background-color: var(--color-white);
-
-        &.sticky {
-            position: fixed;
-            width: 100%;
-            z-index: 999999;
-            top: 0;
-
-        }
-
+       
         .menu-toggle {
             display: block;
             position: relative;

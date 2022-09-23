@@ -1,10 +1,10 @@
-window.addEventListener("scroll", function () {
+/* window.addEventListener("scroll", function () {
 	stickyHeader();
 });
-
-$("header").height($(".header-inner").height());
-
-var header = document.getElementById("header");
+ */
+/* $("header").height($(".header-inner").height());
+ */
+/* var header = document.getElementById("header");
 var headerInner = document.getElementsByClassName("header-inner");
 
 var sticky = header.offsetTop;
@@ -16,7 +16,18 @@ const stickyHeader = () => {
 	} else {
 		$(".header-inner").removeClass("sticky");
 	}
-};
+}; */
+
+const header = document.querySelector("#header");
+const headerHeight = parseInt(window.getComputedStyle(header).height);
+
+document.addEventListener("scroll", function () {
+    if (window.scrollY > headerHeight) {
+        header.classList.add("header_scroll");
+    } else {
+        header.classList.remove("header_scroll");
+    };
+});
 
 const menuToggle = document.querySelector(".menu-toggle");
 const wrapper = document.querySelector(".wrapper");
