@@ -274,12 +274,17 @@ header .header-inner .navbar.navbar-expand-lg .collapse ul li a.active {
 header .header-inner .navbar.navbar-expand-lg .collapse ul li a:focus {
   color: var(--color-orange);
 }
+header .header-inner .navbar.navbar-expand-lg .collapse ul li.nav-item:hover > .dropdown-menu {
+  display: block;
+}
 header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu {
   transition: 0.3s all;
+  border-radius: 0px !important;
+  border: none;
+  box-shadow: 4px 10px 8px 0px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 991px) {
   header .header-inner .navbar.navbar-expand-lg .collapse ul .dropdown-menu {
-    border: none;
     padding-left: 0rem;
     background-color: transparent;
   }
@@ -446,7 +451,7 @@ header .header-inner .mobil-map {
 .sub-banner {
   position: relative;
   z-index: 99;
-  background-color: var(--color-gray);
+  background-color: var(--color-gray) !important;
 }
 .sub-banner::before {
   content: "";
@@ -2114,10 +2119,10 @@ header .header-inner .mobil-map {
     margin-top: 1.5rem;
   }
 }
-.service-detail ul {
+.service-detail ol, .service-detail ul {
   padding-left: 0.7rem;
 }
-.service-detail ul li {
+.service-detail ol li, .service-detail ul li {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -2127,7 +2132,7 @@ header .header-inner .mobil-map {
   font-size: 0.9rem;
   font-weight: 300;
 }
-.service-detail ul li:before {
+.service-detail ol li:before, .service-detail ul li:before {
   font-family: FontAwesome;
   content: "\f054";
   position: absolute;
@@ -2445,4 +2450,37 @@ footer .copyright span {
   height: 100%;
   width: 100%;
   position: absolute;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+/* ============ desktop view .end// ============ */
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/* ============ small devices .end// ============ *//*# sourceMappingURL=style.css.map */
